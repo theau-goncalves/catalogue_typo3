@@ -1,0 +1,43 @@
+
+<table class="tx-ght-catalogue" >
+	<tr>
+		<td>
+			<f:translate key="tx_ghtcatalogue_domain_model_produit.name" />
+		</td>
+		<td>
+		{produit.name}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_ghtcatalogue_domain_model_produit.date_sortie" />
+		</td>
+		<td>
+		{produit.dateSortie -> f:format.date()}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_ghtcatalogue_domain_model_produit.description" />
+		</td>
+		<td>
+		{produit.description}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_ghtcatalogue_domain_model_produit.prix" />
+		</td>
+		<td>
+		{produit.prix}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_ghtcatalogue_domain_model_produit.img" />
+		</td>
+		<td>
+				<f:image src="{produit.img.originalResource.publicUrl}" width="200"/>
+		</td>
+	</tr>
+</table>

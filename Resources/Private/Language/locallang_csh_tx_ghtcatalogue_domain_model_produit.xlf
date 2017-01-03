@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-01-03T14:50:48Z" product-name="ght_catalogue">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="date_sortie.description">
+				<source>dateSortie</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="prix.description">
+				<source>prix</source>
+			</trans-unit>
+			<trans-unit id="img.description">
+				<source>img</source>
+			</trans-unit>
+			<trans-unit id="category.description">
+				<source>category</source>
+			</trans-unit>
+			<trans-unit id="points_de_vente.description">
+				<source>pointsDeVente</source>
+			</trans-unit>
+			<trans-unit id="marchant.description">
+				<source>marchant</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
