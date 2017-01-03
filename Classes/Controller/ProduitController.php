@@ -9,7 +9,7 @@ namespace Ghtcatalogue\GhtCatalogue\Controller;
  *           Gautier Maire
  *           Théau Goncalves
  *
- *  All rights reserved
+ *  All rights reserved /!\
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
  *  free software; you can redistribute it and/or modify
@@ -41,7 +41,7 @@ class ProduitController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
      * @inject
      */
     protected $produitRepository = NULL;
-    
+
     /**
      * action list
      *
@@ -52,7 +52,7 @@ class ProduitController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
         $produits = $this->produitRepository->findAll();
         $this->view->assign('produits', $produits);
     }
-    
+
     /**
      * action show
      *
@@ -63,7 +63,7 @@ class ProduitController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
     {
         $this->view->assign('produit', $produit);
     }
-    
+
     /**
      * action focus
      *
@@ -71,7 +71,7 @@ class ProduitController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
      */
     public function focusAction()
     {
-        
+
     }
 
 }

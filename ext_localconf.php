@@ -8,9 +8,9 @@ if (!defined('TYPO3_MODE')) {
 	'Pi1',
 	array(
 		'Produit' => 'list, show, focus',
-		'Categorie' => 'list, show',
+		'Category' => 'list, show',
 		'Marchand' => 'list, show',
-		
+
 	),
 	// non-cacheable actions
 	array(
@@ -19,6 +19,6 @@ if (!defined('TYPO3_MODE')) {
 		'Marchand' => '',
 		'Caracteristiques' => '',
 		'ValeurCaracteristiques' => '',
-		
+
 	)
 );
