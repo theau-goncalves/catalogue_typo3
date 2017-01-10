@@ -17,23 +17,38 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:flashMessages />
 
-<table  class="tx_ghtcatalogue" >
+<!-- <table  class="tx_ghtcatalogue" >
 	<tr>
 		<th><f:translate key="tx_ghtcatalogue_domain_model_category.name" /></th>
 		<th><f:translate key="tx_ghtcatalogue_domain_model_category.description" /></th>
 		<th><f:translate key="tx_ghtcatalogue_domain_model_category.image" /></th>
 		<th> </th>
 		<th> </th>
-	</tr>
+	</tr> -->
 
-	<f:for each="{categories}" as="category">
-		<tr>
+  <div id="products" class="row list-group">
+	   <f:for each="{categories}" as="category">
+		<!-- <tr>
 			<td><f:link.action action="show" arguments="{category : category}"> {category.name}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{category : category}"> {category.description}</f:link.action></td>
-		</tr>
-	</f:for>
+      <td><f:link.action action="show" arguments="{category : category}"> {category.image}</f:link.action></td>
+      <f:image src="{category.image.originalResource.publicUrl}" width="200"/>
+		</tr> -->
+
+      <div class="item  col-xs-4 col-lg-4">
+          <div class="thumbnail">
+              <f:image class="group list-group-image" src="{category.image.originalResource.publicUrl}" width="200"/>
+              <div class="caption">
+                  <h4 class="group inner list-group-item-heading"><f:link.action action="show" arguments="{category : category}"> {category.name}</f:link.action></h4>
+                  <p class="group inner list-group-item-text"><f:link.action action="show" arguments="{category : category}"> {category.description}</f:link.action></p>
+              </div>
+          </div>
+      </div>
+
+	   </f:for>
+    </div>
 
 
-  
+
 </table>
 </f:section>
