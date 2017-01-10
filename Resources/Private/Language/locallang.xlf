@@ -7,7 +7,7 @@
 				<source>Produit</source>
 			</trans-unit>
 			<trans-unit id="tx_ghtcatalogue_domain_model_produit.name">
-				<source>Name</source>
+				<source>Nom</source>
 			</trans-unit>
 			<trans-unit id="tx_ghtcatalogue_domain_model_produit.date_sortie">
 				<source>Date Sortie</source>
@@ -34,7 +34,7 @@
 				<source>Category</source>
 			</trans-unit>
 			<trans-unit id="tx_ghtcatalogue_domain_model_category.name">
-				<source>Name</source>
+				<source>Nom</source>
 			</trans-unit>
 			<trans-unit id="tx_ghtcatalogue_domain_model_category.description">
 				<source>Description</source>
@@ -49,7 +49,7 @@
 				<source>Marchand</source>
 			</trans-unit>
 			<trans-unit id="tx_ghtcatalogue_domain_model_marchand.name">
-				<source>Name</source>
+				<source>Nom</source>
 			</trans-unit>
 			<trans-unit id="tx_ghtcatalogue_domain_model_marchand.site">
 				<source>Site</source>
@@ -67,7 +67,7 @@
 				<source>Adresse</source>
 			</trans-unit>
 			<trans-unit id="tx_ghtcatalogue_domain_model_marchand.cp">
-				<source>Cp</source>
+				<source>Code Postal</source>
 			</trans-unit>
 			<trans-unit id="tx_ghtcatalogue_domain_model_marchand.ville">
 				<source>Ville</source>
@@ -76,7 +76,7 @@
 				<source>Caracteristiques</source>
 			</trans-unit>
 			<trans-unit id="tx_ghtcatalogue_domain_model_caracteristiques.name">
-				<source>Name</source>
+				<source>Nom</source>
 			</trans-unit>
 			<trans-unit id="tx_ghtcatalogue_domain_model_valeurcaracteristiques">
 				<source>Valeur Caracteristiques</source>
