@@ -30,8 +30,16 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 
 	<f:for each="{marchands}" as="marchand">
-		
-			<f:link.action action="show" arguments="{marchand : marchand}"> {marchand.name}</f:link.action>
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    
+  			<div class=".col-xs-12 .col-md-8">
+  				<h3><f:translate key="tx_ghtcatalogue_domain_model_marchand.name" /></h3>
+				<span>{marchand.name}</span>
+  			</div>
+			
 			<f:link.action action="show" arguments="{marchand : marchand}"> {marchand.site}</f:link.action>
 			<f:link.action action="show" arguments="{marchand : marchand}"> {marchand.email}</f:link.action>
 		<f:link.action action="show" arguments="{marchand : marchand}"> {marchand.tel}</f:link.action>
@@ -39,9 +47,9 @@ Otherwise your changes will be overwritten the next time you save the extension 
 			<f:link.action action="show" arguments="{marchand : marchand}"> {marchand.adresse}</f:link.action>
 			<f:link.action action="show" arguments="{marchand : marchand}"> {marchand.cp}</f:link.action>
 			<f:link.action action="show" arguments="{marchand : marchand}"> {marchand.ville}</f:link.action>
-			<f:image src="{marchand.image.originalResource.publicUrl}" width="200"/>
+			<f:image src="{marchand.image.originalResource.publicUrl}" width="100"/>
 		
 	</f:for>
-
-<f:link.action action="new">New Marchand</f:link.action>
+  </div>
+</div>
 </f:section>
