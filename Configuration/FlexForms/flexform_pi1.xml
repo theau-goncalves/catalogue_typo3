@@ -15,21 +15,17 @@
 								<items>
 									<numIndex index="0">
 										<numIndex index="0">Liste des Categorie</numIndex>
-										<numIndex index="1">Category->list;Category->show</numIndex>
+										<numIndex index="1">Category->list;Category->show;Produit->show</numIndex>
 									</numIndex>
 									<numIndex index="1">
-										<numIndex index="0">Liste des Categorie</numIndex>
-										<numIndex index="1">Produit->show</numIndex>
-									</numIndex>
-									<numIndex index="2">
 										<numIndex index="0">Liste de Marchand</numIndex>
 										<numIndex index="1">Marchand->list;Marchand->show</numIndex>
 									</numIndex>
-									<numIndex index="3">
+									<numIndex index="2">
 										<numIndex index="0">Tout les Produits</numIndex>
 										<numIndex index="1">Produit->list</numIndex>
 									</numIndex>
-									<numIndex index="4">
+									<numIndex index="3">
 										<numIndex index="0">Remontée de Prduits</numIndex>
 										<numIndex index="1">Produit->focus</numIndex>
 									</numIndex>
