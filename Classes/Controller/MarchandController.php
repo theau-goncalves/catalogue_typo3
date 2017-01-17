@@ -41,6 +41,14 @@ class MarchandController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      * @inject
      */
     protected $marchandRepository = NULL;
+
+    /**
+     * marchandRepository
+     *
+     * @var \Ghtcatalogue\GhtCatalogue\Domain\Repository\ProduitRepository
+     * @inject
+     */
+    protected $produitRepository = NULL;
     
     /**
      * action show
@@ -51,6 +59,7 @@ class MarchandController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     public function showAction(\Ghtcatalogue\GhtCatalogue\Domain\Model\Marchand $marchand)
     {
         $this->view->assign('marchand', $marchand);
+       // $produits = $this->produitRepository->findAll();
     }
     
     /**

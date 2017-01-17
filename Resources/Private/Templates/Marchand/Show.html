@@ -13,10 +13,28 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Single View for Marchand</h1>
+<h1>Détails du vendeur : {marchand.name}</h1>
+</br>
+
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-4 text-">
+        <f:image src="{marchand.image.originalResource.publicUrl}" width="200"/>
+    </div>
+
+    <div class="col-sm-12 col-md-12 col-lg-8 text-">
+        <h3>Contact :</h3>
+        <p>Site web : <a href="{marchand.site}">{marchand.site}</a></p>
+        <p>Adresse email : {marchand.email}</p>
+        <p>Téléphone  : {marchand.tel}</p>
+        <hr>
+        <h3>Adresse postale :</h3>
+        <p>{marchand.adresse}</p>
+        <p>{marchand.cp}  {marchand.ville}</p>
+       
+    </div>
+</div>
 
 <f:flashMessages />
-<f:render partial="Marchand/Properties" arguments="{marchand:marchand}" />
-<f:link.action action="list">Back to list</f:link.action><br />
-<f:link.action action="new">New Marchand</f:link.action>
+<!-- <f:render partial="Marchand/Properties" arguments="{marchand:marchand}" /> -->
+<f:link.action action="list" class="btn btn-primary">Retourner au marchands</f:link.action><br />
 </f:section>
