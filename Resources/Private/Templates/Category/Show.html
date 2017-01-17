@@ -13,10 +13,15 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Single View for Category</h1>
 
-<f:flashMessages />
-<f:render partial="Category/Properties" arguments="{category:category}" />
-<f:link.action action="list">Back to list</f:link.action><br />
-<f:link.action action="new">New Category</f:link.action>
+<div class="thumbnail">
+  <h1>Description de la catégorie</h1>
+
+  <f:flashMessages />
+  <f:render partial="Category/Properties" arguments="{category:category}" />
+</div>
+<div class="btn-group">
+  <f:link.action action="list" class="btn btn-default">Retour à la liste</f:link.action>
+  <f:link.action action="new" class="btn btn-default">Nouvelle catégorie</f:link.action>
+</div>
 </f:section>

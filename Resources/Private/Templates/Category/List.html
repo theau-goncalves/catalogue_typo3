@@ -13,7 +13,7 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Listing for Category</h1>
+<h1>Liste des catégories</h1>
 
 <f:flashMessages />
 
@@ -40,7 +40,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
               <f:image class="group list-group-image" src="{category.image.originalResource.publicUrl}" width="200"/>
               <div class="caption">
                   <h4 class="group inner list-group-item-heading"><f:link.action action="show" arguments="{category : category}"> {category.name}</f:link.action></h4>
-                  <p class="group inner list-group-item-text"><f:link.action action="show" arguments="{category : category}"> {category.description}</f:link.action></p>
+                  <p class="group inner list-group-item-text"><f:link.action action="show" arguments="{category : category}">Lire la description</f:link.action></p>
               </div>
           </div>
       </div>
