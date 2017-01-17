@@ -15,36 +15,22 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1 style="margin-bottom:50px;">Liste des produits</h1>
+<h1 style="margin-bottom:50px;" class="text-center">Liste des produits</h1>
 
 <f:flashMessages />
 
-<table  class="tx_ghtcatalogue" >
-	<!-- <tr>
-		<th><f:translate key="tx_ghtcatalogue_domain_model_produit.name" /></th>
-		<th><f:translate key="tx_ghtcatalogue_domain_model_produit.date_sortie" /></th>
-		<th><f:translate key="tx_ghtcatalogue_domain_model_produit.description" /></th>
-		<th><f:translate key="tx_ghtcatalogue_domain_model_produit.prix" /></th>
-		<th><f:translate key="tx_ghtcatalogue_domain_model_produit.img" /></th>
-		<th> </th>
-		<th> </th>
-	</tr> -->
-
 	<f:for each="{produits}" as="produit">
-  <div class="panel panel-default col-md-4">
+  <div class="panel panel-default col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
     <div class="panel-body">
       <div class="produit ">
-          <h2 class="text-center"><f:link.action action="show" arguments="{produit : produit}"> {produit.name}</f:link.action></h2>
+          <h2 class="text-center"><f:link.action action="show" arguments="{produit : produit}" pageUid="40"> {produit.name}</f:link.action></h2>
           <p class="text-center" style="font-style:italic;">{produit.dateSortie -> f:format.date()}</p>
-          <p>Description : {produit.description}</p>
-          <p>Prix : {produit.prix}€</p>
-          <f:image src="{produit.img.originalResource.publicUrl}" width="200px"  height="auto"/>
+          <h3 class="col-xs-12 text-center">{produit.prix}€</h3>
+          <f:image src="{produit.img.originalResource.publicUrl}" class="col-xs-12" style="height:150px;width:auto;margin-bottom:10px;"/>
       </div>
     </div>
   </div>
 
 	</f:for>
-
-</table>
 
 </f:section>
