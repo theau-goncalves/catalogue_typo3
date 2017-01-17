@@ -1,7 +1,9 @@
-<div class="col-md-12 tx-ght-catalogue">
-	<h1 class="text-center">{produit.name}</h1>
-	<p style="font-style:italic;" class="text-center">{produit.dateSortie -> f:format.date()}</p>
-	<p class="col-md-10 col-md-offset-1">{produit.description}</p>
-	<h2 class="col-xs-12 text-center" style="margin:30px 0;">{produit.prix}€</h2>
-	<f:image src="{produit.img.originalResource.publicUrl}" class="col-xs-10 col-xs-offset-1" style="height:auto;"/>
-</div>
+<f:format.html>
+	<div class="col-md-12 tx-ght-catalogue">
+		<h1 class="text-center">{produit.name}</h1>
+		<p style="font-style:italic;" class="text-center">{produit.dateSortie -> f:format.date()}</p>
+		<p class="col-md-10 col-md-offset-1">{produit.description -> f:}</p>
+		<h2 class="col-xs-12 text-center" style="margin:30px 0;">{produit.prix}€</h2>
+		<f:image src="{produit.img.originalResource.publicUrl}" class="col-xs-10 col-xs-offset-1" style="height:auto;"/>
+	</div>
+</f:format.html>
