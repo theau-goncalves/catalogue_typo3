@@ -18,19 +18,19 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:flashMessages />
 
-<!-- <f:render partial="Produit/Focus" arguments="{produit:produit}" /> -->
 <f:for each="{produits}" as="produit">
-<f:if condition="{produit.prix} < 10">
-<div class="panel panel-default col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
-  <div class="panel-body">
-    <div class="produit ">
-        <h2 class="text-center"><f:link.action action="show" arguments="{produit : produit}" pageUid="40"> {produit.name}</f:link.action></h2>
-        <p class="text-center" style="font-style:italic;">{produit.dateSortie -> f:format.date()}</p>
-        <h3 class="col-xs-12 text-center">{produit.prix}€</h3>
-        <f:image src="{produit.img.originalResource.publicUrl}" class="col-xs-12" style="height:150px;width:auto;margin-bottom:10px;"/>
+  <f:if condition="{produit.prix} < 10">
+  <div class="panel panel-default col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
+    <div class="panel-body">
+      <div class="produit ">
+          <h2 class="text-center"><f:link.action action="show" arguments="{produit : produit}" pageUid="{settings.detailsProduits}"> {produit.name}</f:link.action></h2>
+          <p class="text-center" style="font-style:italic;">{produit.dateSortie -> f:format.date()}</p>
+          <h3 class="col-xs-12 text-center">{produit.prix}€</h3>
+          <f:image src="{produit.img.originalResource.publicUrl}" class="col-xs-12" style="height:150px;width:auto;margin-bottom:10px;"/>
+      </div>
     </div>
   </div>
-</div>
-</f:if>
+  </f:if>
 </f:for>
+
 </f:section>
