@@ -1,43 +1,7 @@
-
-<table class="tx-ght-catalogue" >
-	<tr>
-		<td>
-			<f:translate key="tx_ghtcatalogue_domain_model_produit.name" />
-		</td>
-		<td>
-		{produit.name}
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<f:translate key="tx_ghtcatalogue_domain_model_produit.date_sortie" />
-		</td>
-		<td>
-		{produit.dateSortie -> f:format.date()}
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<f:translate key="tx_ghtcatalogue_domain_model_produit.description" />
-		</td>
-		<td>
-		{produit.description}
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<f:translate key="tx_ghtcatalogue_domain_model_produit.prix" />
-		</td>
-		<td>
-		{produit.prix}
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<f:translate key="tx_ghtcatalogue_domain_model_produit.img" />
-		</td>
-		<td>
-				<f:image src="{produit.img.originalResource.publicUrl}" width="200"/>
-		</td>
-	</tr>
-</table>
+<div class="col-md-12 tx-ght-catalogue">
+	<h1 class="text-center">{produit.name}</h1>
+	<p style="font-style:italic;" class="text-center">{produit.dateSortie -> f:format.date()}</p>
+	<p class="col-md-10 col-md-offset-1">{produit.description}</p>
+	<h2 class="col-xs-12 text-center" style="margin:30px 0;">{produit.prix}€</h2>
+	<f:image src="{produit.img.originalResource.publicUrl}" class="col-xs-10 col-xs-offset-1" style="height:auto;"/>
+</div>

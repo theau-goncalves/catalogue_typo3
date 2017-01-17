@@ -13,10 +13,7 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Single View for Produit</h1>
-
 <f:flashMessages />
 <f:render partial="Produit/Properties" arguments="{produit:produit}" />
-<f:image src="{produit.img.originalResource.publicUrl}" width="200"/>
-<f:link.action action="list">Back to list</f:link.action><br />
+<f:link.action action="list" pageUid="38" class="col-xs-12 text-center" style="margin:30px 0;">Back to list</f:link.action><br />
 </f:section>
