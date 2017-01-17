@@ -1,4 +1,3 @@
-
 <f:layout name="Default" />
 
 This Template is responsible for displaying a single view for a domain object
@@ -13,15 +12,11 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
+  <div class="thumbnail">
+    <h1>Description de la catégorie</h1>
 
-<div class="thumbnail">
-  <h1>Description de la catégorie</h1>
-
-  <f:flashMessages />
-  <f:render partial="Category/Properties" arguments="{category:category}" />
-</div>
-<div class="btn-group">
+    <f:flashMessages />
+    <f:render partial="Category/Properties" arguments="{category:category}" />
+  </div>
   <f:link.action action="list" class="btn btn-default">Retour à la liste</f:link.action>
-  <f:link.action action="new" class="btn btn-default">Nouvelle catégorie</f:link.action>
-</div>
 </f:section>
